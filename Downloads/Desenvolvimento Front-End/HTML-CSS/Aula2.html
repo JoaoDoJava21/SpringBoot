@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+    
+    <!-- Atributos por -> id <- não podem ser nomes repetidos.-->
+    <!--Atributos por -> class <- podem se repetir , por exemplo o atributo
+    fundo-vermelho pode ser aplica em qualquer atributo e vai receber a mesma cor -->
+
+    <!-- Id só pode ser sobrescrito atráves de outro id ou !important -->
+    <style>
+       
+       #meu-atributo{
+            color: rgb(213, 18, 18);
+        }
+
+        .fundo-vermelho{
+            color: black;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1 id="meu-atributo">Vai vir aqui</h1> <!-- Tudo que eu estiver dentro dessa tag fica aqui ! Sempre feche na ordem correta-->
+    <h2 class="fundo-vermelho">Segundo H2</h2>
+    <h3 class="fundo-vermelho">Terceiro H3</h3> <!--Recebendo o mesmo atributo do Segundo H2-->
+
+    <p>Um texto <b> Qualquer negrito </b> </p> <!--O atributo <b> deixa oque estiver dentro dele em negrito-->
+    
+    
+</body>
+</html>

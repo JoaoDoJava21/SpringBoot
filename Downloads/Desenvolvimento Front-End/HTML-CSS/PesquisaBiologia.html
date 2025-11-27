@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomas do Brasil</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        .capa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            page-break-after: always;
+            border: 3px double #2c5f2d;
+            padding: 40px;
+        }
+        
+        .capa h1 {
+            font-size: 32px;
+            color: #2c5f2d;
+            margin: 20px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .capa h2 {
+            font-size: 24px;
+            color: #2c5f2d;
+            margin: 30px 0;
+            font-weight: normal;
+        }
+        
+        .capa .info {
+            margin-top: 60px;
+            font-size: 16px;
+        }
+        
+        .capa .info p {
+            margin: 10px 0;
+        }
+        
+        .conteudo {
+            page-break-before: always;
+        }
+        
+        h1 {
+            color: #2c5f2d;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2c5f2d;
+            padding-bottom: 5px;
+        }
+        
+        h2 {
+            color: #2c5f2d;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        h3 {
+            color: #2c5f2d;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            text-align: justify;
+            margin-bottom: 12px;
+            text-indent: 1.5cm;
+        }
+        
+        .intro p {
+            text-indent: 0;
+        }
+        
+        strong {
+            color: #2c5f2d;
+        }
+        
+        .bioma-section {
+            margin-bottom: 30px;
+            page-break-inside: avoid;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            .capa {
+                min-height: 100vh;
+            }
+        }
+        
+        .btn-print {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #2c5f2d;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .btn-print:hover {
+            background: #1e4020;
+        }
+        
+        @media print {
+            .btn-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-print" onclick="window.print()"> Imprimir/Salvar PDF</button>
+    
+    <div class="capa">
+        <h1>Trabalho de Biologia</h1>
+        <h2>Biomas do Brasil</h2>
+        
+        <div class="info">
+            <p><strong>Aluno:</strong> João Victor Mendes</p>
+            <p><strong>Turma:</strong> 3B - Matutino</p>
+            <p><strong>Disciplina:</strong> Biologia</p>
+            <p style="margin-top: 40px;"><strong>2025</strong></p>
+        </div>
+    </div>
+    
+    <div class="conteudo">
+        <h1>Biomas do Brasil</h1>
+        
+        <div class="intro">
+            <p>Na esquematização do IBGE (2004), o Brasil tem seu território ocupado por seis biomas (ou áreas biogeográficas) terrestres e um bioma marinho.</p>
+        </div>
+        
+        <div class="bioma-section">
+            <h2>Terminologia</h2>
+            <p>O termo "bioma" apresenta vários significados. Em sentido restrito, empregado na literatura internacional, é aplicado para denominar áreas de pequena escala, tipos de habitat ou de ecossistema, definidos fisionômico-funcionalmente. Apesar de englobar tanto as plantas quanto os animais e microrganismos de uma comunidade, na prática, se define pelo clima e pela fisionomia ou aparência geral das plantas da comunidade.</p>
+            
+            <p>No sentido amplo, adotado por Joly et al. (1978) e pelo IBGE (2016), bioma pode ser entendido como um sinônimo de "província biótica" (ex.: Rizzini, 1963; Eiten, 1977; Cabrera & Willink, 1980; o termo "província florística" ou "fitogeográfica" é usado quando se consideram as espécies de plantas, apenas), ou ainda, como sinônimo aproximado de "domínio morfoclimático e fitogeográfico" (Ab'Sáber, 1967, 2003).</p>
+            
+            <p>Neste sentido amplo, o Projeto Radam (Veloso et al., 1973) aplica o termo "região fitoecológica", e IBGE (2012) adota o termo "região florística". Entretanto, deve se entender o termo "região", neste caso, em sentido generalista de "área". Os termos "região" e "província" têm sentidos tradicionais específicos em fitogeografia: regiões são áreas caracterizadas por famílias endêmicas, e províncias são áreas caracterizadas por gêneros ou espécies endêmicas.</p>
+        </div>
+        
+        <div class="bioma-section">
+            <h2>Amazônia</h2>
+            <p>A Amazônia ocupa uma área de 4.196.943 km² e 49,29% do território nacional que é constituída principalmente por uma floresta tropical. A Amazônia ocupa a totalidade dos territórios do Acre, Amapá, Amazonas, Pará, Roraima e parte dos territórios do Maranhão (34%), Mato Grosso (54%), Rondônia (98,8%) e Tocantins (9%). A Amazônia é formada por distintos ecossistemas como florestas densas de terra firme, florestas estacionais, florestas de igapó, campos alagados, várzeas, savanas, refúgios montanhosos e formações pioneiras.</p>
+            
+            <p>A Floresta Amazônica é a maior formação florestal do planeta, condicionada pelo clima equatorial úmido. Equivale a 35% das áreas florestais do planeta. Possui uma grande variedade de fisionomias vegetais, desde as florestas densas até os campos. Florestas densas são preponderantemente pelas matas de terra firme, as florestas de várzea, periodicamente alagadas, e as florestas de igapó, permanentemente inundadas, que ocorrem por quase toda a Amazônia central.</p>
+            
+            <p>Os campos de Roraima ocorrem sobre solos pobres no extremo setentrional da bacia do rio Branco. As campinaranas desenvolvem-se sobre solos arenosos, espalhando-se em manchas ao longo da bacia do Rio Negro. Ocorrem ainda áreas de cerrado isoladas do ecossistema do cerrado do Planalto Central do Brasil. Nos topos dos morros geralmente aparecem áreas de campos rupestres, semelhantes ao cerrado.</p>
+        </div>
+        
+        <div class="bioma-section">
+            <h2>Cerrado</h2>
+            <p>O cerrado ocupa uma área de 2.036.448 km², correspondente a 23,92% do território e que é constituído principalmente por savanas. O Cerrado ocupa a totalidade do Distrito Federal e parte do território da Bahia (27%), Goiás (10%), Maranhão (65%), Mato Grosso (39%), Mato Grosso do Sul (61%), Minas Gerais (57%), Paraná (2%), Piauí (37%), Rondônia (0,2%), São Paulo (32%) e Tocantins (91%).</p>
+            
+            <p>O Cerrado ocupa a região do Planalto Central Brasileiro, sendo que grandes manchas desta fisionomia na Amazônia e algumas menores na Caatinga e na Mata Atlântica. Seu clima é particularmente marcante, apresentando duas estações bem definidas. O Cerrado apresenta fisionomias variadas, indo desde campos limpos desprovidos de vegetação lenhosa a cerradão, uma formação arbórea densa. Esta região é permeada por matas ciliares e veredas, que acompanham os cursos d'água.</p>
+        </div>
+        
+        <div class="bioma-section">
+            <h2>Mata Atlântica</h2>
+            <p>A Mata Atlântica ocupa uma área de 1.086.289 km² e 13,04% do território nacional, constituída principalmente por um longo cinturão de florestas que corre do Rio Grande do Norte ao Rio Grande do Sul. A Mata Atlântica ocupa a totalidade dos territórios do Espírito Santo, Rio de Janeiro e Santa Catarina, e parte do território do estado de Alagoas (52%), Bahia (19%), Goiás (3%), Mato Grosso do Sul (14%), Minas Gerais (41%), Paraíba (8%), Paraná (98%), Pernambuco (17%), Rio Grande do Norte (5%), Rio Grande do Sul (37%), São Paulo (68%) e Sergipe (51%).</p>
+            
+            <p>A Mata Atlântica é composta por uma série de ecossistemas com estruturas e composições florísticas bastante diferenciadas, acompanhando as características climáticas da região onde ocorre, tendo como elemento comum a exposição aos ventos úmidos que sopram do oceano. Os ecossistemas florestais que compõe a Mata Atlântica são a floresta ombrófila (densa, mista e aberta), a floresta estacional semidecidual e a floresta estacional decidual, além de ecossistemas associados como manguezais, restingas e campos de altitude.</p>
+            
+            <p>A Mata Atlântica, incluindo as florestas estacionais semideciduais, originalmente foi a floresta com a maior extensão latitudinal do planeta, indo de cerca de 6 a 32ºS. A variabilidade climática ao longo de sua distribuição é grande, indo de climas temperados superúmidos no extremo sul ao tropical úmido e semiárido no nordeste.</p>
+            
+            <p>O relevo acidentado da zona costeira adiciona ainda mais variabilidade a este ecossistema. Nos vales geralmente as árvores se desenvolvem, formando uma floresta densa. Nas encostas esta floresta é menos densa, devido à frequente queda de árvores. Nos topos dos morros geralmente aparecem áreas de campos rupestres. No extremo sul a Mata Atlântica gradualmente se mescla com a floresta de Araucárias.</p>
+            
+            <p>A Mata de Araucárias apresenta elementos de bioma da Mata Atlântica. Ocorre no Planalto Meridional Brasileiro, com altitudes superiores a 500m, destaca-se a área de dispersão do pinheiro-do-paraná, Araucária (angustifolia), que já ocupou cerca de 2,6% do território nacional. Nestas florestas coexistem representantes da flora tropical e temperada do Brasil, sendo hoje dominadas, no entanto, pelo pinheiro-do-paraná.</p>
+            
+            <p>As florestas variam em densidade arbórea e altura da vegetação e podem ser classificadas de acordo com aspectos de solo, como aluviais, ao longo dos rios, submontanhosas, que já intervalam e montanhosas, que acompanham a paisagem. A vegetação aberta dos campos gramíneo-lenhosos ocorre sobre solos rasos. Devido ao seu alto valor econômico a Mata de Araucária vêm sofrendo forte pressão de desmatamento.</p>
+        </div>
+        
+        <div class="bioma-section">
+            <h2>Caatinga</h2>
+            <p>A Caatinga abrange 9,92% do território nacional, ocupando uma área de 844.453 km², é constituída principalmente por uma savana-estépica. A Caatinga ocupa a totalidade do estado do Ceará e parte do território de Alagoas (48%), Bahia (54%), Maranhão (1%), Minas Gerais (2%), Paraíba (92%), Pernambuco (83%), Piauí (63%), Rio Grande do Norte (95%) e Sergipe (49%).</p>
+            
+            <p>A caatinga é formada basicamente por plantas xerófilas ou seja, adaptadas às condições do clima semiárido, que predomina no sertão nordestino. As espécies vegetais que habitam esta área são em geral formadas por árvores e arbustos espaçados, baixos e com galhos retorcidos. A presença de cactáceas é grande na caatinga, destacando-se o mandacaru e o xique-xique, além de diversas espécies de bromélias como o caroá e a macambira são, também, elementos importantes da paisagem da caatinga.</p>
+            
+            <p>Durante o período seco grande parte das plantas da caatinga perdem suas folhas, o que conserva as plantas às condições climáticas, fazendo com que a planta minimize a transpiração e evite, assim, a perda de água armazenada, tornando a paisagem bem mais próxima daquela típica imagem seca da caatinga. Com o retorno das chuvas a caatinga muda seu aspecto, a folhagem das plantas voltam a brotar e aparecem até flores.</p>
+            
+            <p>Ao entrar na área de transição, entre Caatinga e a Mata Atlântica, nas áreas localizadas mais próximas do litoral, onde o mangueazal é caracterizado por ser uma área alagada de fundo lodoso e salobro. Entre os principais animais encontrados no mangue estão os caranguejos e as ostras.</p>
+        </div>
+    </div>
+</body>
+</html>
