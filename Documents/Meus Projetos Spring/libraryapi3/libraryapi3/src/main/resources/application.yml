@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: libraryapi3
+  datasource:  # Filho do Spring , aqui é onde coloco as propriedades para acessar o Postgres
+    url: jdbc:postgresql://localhost:5432/library3
+    username : postgres
+    password : postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true # Para ver o sql dentro do console sendo gerado
+    hibernate:
+      ddl-auto: update # Estratégia , none , create , create-drop
+
+
